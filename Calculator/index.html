@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+            gap: 10px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .display {
+            grid-column: 1 / -1;
+            background-color: #e3e3e3;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+            font-size: 1.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            font-size: 1.2em;
+            background-color: #d9d9d9;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 80px; /* Ensure all buttons are of equal size */
+            height: 80px; /* Ensure all buttons are of equal size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .btn:hover {
+            background-color: #ccc;
+        }
+
+        .number, .operator, .clear, .equal {
+            grid-column-end: span 1;
+        }
+
+        .equal {
+            grid-row: 5 / span 2;
+            font-size: 1.5em; /* Adjust font size */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+        <button class="btn number" onclick="addToDisplay('7')">7</button>
+        <button class="btn number" onclick="addToDisplay('8')">8</button>
+        <button class="btn number" onclick="addToDisplay('9')">9</button>
+        <button class="btn operator" onclick="addToDisplay('+')">+</button>
+        <button class="btn number" onclick="addToDisplay('4')">4</button>
+        <button class="btn number" onclick="addToDisplay('5')">5</button>
+        <button class="btn number" onclick="addToDisplay('6')">6</button>
+        <button class="btn operator" onclick="addToDisplay('-')">-</button>
+        <button class="btn number" onclick="addToDisplay('1')">1</button>
+        <button class="btn number" onclick="addToDisplay('2')">2</button>
+        <button class="btn number" onclick="addToDisplay('3')">3</button>
+        <button class="btn operator" onclick="addToDisplay('*')">*</button>
+        <button class="btn clear" onclick="clearDisplay()">C</button>
+        <button class="btn number" onclick="addToDisplay('0')">0</button>
+        <button class="btn operator" onclick="addToDisplay('/')">/</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+    
+    <script>
+        let displayValue = '0';
+
+        function addToDisplay(value) {
+            if (displayValue === '0') {
+                displayValue = '';
+            }
+            displayValue += value;
+            document.getElementById('display').innerText = displayValue;
+        }
+
+        function clearDisplay() {
+            displayValue = '0';
+            document.getElementById('display').innerText = displayValue;
+        }
+
+        function calculate() {
+            let result = eval(displayValue);
+            displayValue = result.toString();
+            document.getElementById('display').innerText = displayValue;
+        }
+    </script>
+</body>
+</html>
