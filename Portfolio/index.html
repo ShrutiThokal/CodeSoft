@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Thokal's Portfolio</title>
+
+    <!--Internal CSS-->
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+        body{   
+            background-color: rgb(11,11,71);
+            color: white;
+            font-family:'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(25, 25, 165);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none ;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul li a:hover {
+            font-size: 1.2rem;
+            color: rgb(156,130,233);
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(110,74,218) ;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left{
+
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            font-size: 3.5rem;
+        }
+        .rightsection img{
+            width: 100%;
+            height:450px;
+        }
+        .purple{
+            color: rgb(195,155,231);
+        }
+        #element{
+            color: rgb(195,155,231);
+
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .text-grey{
+            color:grey;
+        }
+        .secondsection .box{
+            background:white;
+            width:76vw ;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color:white; 
+            margin: 0 120px;   
+        }
+        .image-top{
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150;
+            font: size 25px;
+
+        }
+        .vertical-desc{
+            position: relative;
+            top:86px ;
+            color:grey;
+            width: 150px;
+            font-size:15px;
+
+        }
+        footer{
+            background-color: rgb(55,55,58);
+
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            font-size: 13px;
+            justify-content: space-evenly;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer >div{
+            font-size: 0.8rem;
+            width: 246px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:grey;
+            padding: 12px 0;            
+        }
+        .image-top1{
+            width: 30px;
+            position:relative;
+            top: 0px;
+            left: 9px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shruti Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Contact me">Contact Me</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="Home">
+
+            <div class="leftsection">
+                Hi, I am a <span class="purple">Shruti</span>
+
+                <div>And I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+    <hr>
+        <section class="secondsection" id="skills">
+            <span class="text-grey">What I have doing so far</span>
+            <h1>Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer(2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="android.png" alt="">
+                    <div class="vertical-title">
+                        Android Developer (2023 - Onwards)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="py.jpeg" alt="">
+                    <div class="vertical-title">
+                        Python Developer (2022 - Onwards)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="node.png" alt="">
+                    <div class="vertical-title">
+                        NodeJs Developer (2023 - Onwards)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-title">
+                        Java Developer(2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt="">
+                    <div class="vertical-title">
+                        ReactJs Developer(2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maxime deleniti amet suscipit porro qui culpa fugit facilis animi, 
+                        fuga, quos aliquam dolore quam!
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    <hr>
+        <section class="secondsection" id="Projects">
+            <span class="text-grey">What I am done the Projects so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Weather Prediction Website
+                    </div>
+                    <div class="vertical-desc">
+                       In This Project we can predict the weather of the city across the world.
+                       By using this web you can get the detailed report about the weathe.
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer" id="Contact me">
+            <div class="footer-first">
+                <h1>Shruti Thokal's Portfolio</h1> <br />
+                <h1>Contact Me</h1>
+            </div>
+            <div class="footer-second">
+                <br  />
+                <ul>
+                    <li>Address : <span>lakxmi nagar , Bale , Solapur </span></li><br />
+                    <br>
+                    <li>Email : thokalshruti07@gmail.com</li><br  />
+                    <br>
+                    <li>Contact NO : 8999461843 </li><br />
+                    <br>
+                    <li>Telephone No : 2103-365972</li><br />
+                    <br>
+                </ul>
+                
+            </div>       
+            <div class="footer-third">
+               
+                    <li>Whatsapp  <a href="https://www.google.com"><img class="image-top1" src="whatsapp.webp" alt=""></a></li><br/>
+                    <li>Instagram <a href="https://www.google.com"><img class="image-top1" src="insta.png" alt=""></a></li><br/>
+                    <li>Facebook  <a href="https://www.google.com"><img class="image-top1" src="facebook.png" alt=""></a></li><br/>
+                    <li>Youtube         <a href="https://www.google.com"><img class="image-top1" src="yt.png" alt=""></a></li><br/>
+               
+                
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; www.shrutithokalportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+<!--Java Script-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Android Developer','Python Programmer'],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
